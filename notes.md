@@ -15,7 +15,24 @@ I also want to thank Jenny Manning for doing her talk CodeMash 2019 - _Mommy, wh
 > So, "Daddy, where do version control systems come from?"
 TODO: Insert slide of Emily and/or Olivia asking me a question here.
 
+----
 Let's step back though and talk about the dark ages. The before time. The time before version control. 
+
+> TODO: Insert picture of punch card deck.
+
+Can anybody tell me what this is?
+
+Has anybody here actually used these before? Looking around the room, I feel pretty confident that the answer for just about everybody is no. If anybody has, can you tell me when you used them and where?
+
+So, how do you think you would organize these? Do you think it's possible to have any concept of version control?
+
+The answer to the second question is, not really. Given two decks of punch cards, there isn't an easy way to diff them. There were machines to duplicate a punch card deck, but not anything that would compare them as far as I know.
+
+So, I think the best we can do is talk about how a programmer would maintain his punch card deck.
+
+> TODO: Insert picture of punch card typewriter.
+
+Does anybody know what this is? This is a keypunch machine. After writing your program on coding sheets, you would take your sheets over to a keypunch operator, usually a woman.
 
 > TODO: Insert content about punch card organization here.
 
