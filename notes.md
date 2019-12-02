@@ -62,7 +62,7 @@ That kinds of just shifts the problem around though. What if we have our sorted 
 
 There are still a lot of limitations here. Getting new sequence numbers is automated, but if you put a card in the wrong spot in the deck you won't have any record of that. You'll have to compile and, if it compiles successfully, execute your program to recognize your mistake.
 
-There's also no trail of any changes. Collaborating with another programmer on a problem is very difficult. You would have to very, very carefully negotiate who is working on what.
+There's also no trail of any changes. Collaborating with another programmer on a problem is very difficult. You would have to very, very carefully negotiate who is working on what. And even when working by yourself, you can't look at your history and figure out where you introduced a bug.
 
 But, as far as I can tell, this as far as the punch card world got. Punch cards weren't long for this world though. We were about to enter the world of multi-user operating systems and teletypes. Pretty soon punch cards would begin to fade out and source code would live on the computer itself. Which meant it was time to start looking into software to manage it.
 
