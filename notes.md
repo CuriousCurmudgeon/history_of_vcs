@@ -64,20 +64,38 @@ There are still a lot of limitations here. Getting new sequence numbers is autom
 
 There's also no trail of any changes. Collaborating with another programmer on a problem is very difficult. You would have to very, very carefully negotiate who is working on what. And even when working by yourself, you can't look at your history and figure out where you introduced a bug.
 
+> TODO: Insert information about PATCHY (https://rahul.gopinath.org/post/2011/12/30/version-control-systems/ and https://inis.iaea.org/collection/NCLCollectionStore/_Public/22/031/22031927.pdf)
+
 But, as far as I can tell, this as far as the punch card world got. Punch cards weren't long for this world though. We were about to enter the world of multi-user operating systems and teletypes. Pretty soon punch cards would begin to fade out and source code would live on the computer itself. Which meant it was time to start looking into software to manage it.
 
 ----
 
 So, what is version control?
 
-> TODO: Insert definition of version control here. What criteria needs to be met to qualify as version control?
+Wikipedia says that it
+> is the management of changes to documents, computer programs, large web sites, and other collections of information. (https://en.wikipedia.org/wiki/Version_control)
 
-> TODO: Insert discussion of systems that pre-date SCCS. They met some of the criteria, but not all.
+The Git documentation says
+> Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. (https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
 
-> TODO: Insert discussion of difference between VCS, SCM, etc.
+You'll notice these definitions don't lay out any specific requirements about what features a version control system needs to have. We would certainly like it to be easy to visualize changes. We would certainly like to have atomic commits. We would certainly like it to be easy to manage releases. But none of these are required. You just need to record changes so you can get back to a specific version if needed. That's it.
+
+> TODO: Insert slide with meanings of VCS, SCM, etc.
+
+One other terminology note before we dive in. I'm going to use some terms interchangeably here.
+
+VCS = Version Control Software
+SCM = Source Control Management (or Software Configuration Management. I'm using the term just for source control here.)
+Revision Control
+
+Any distinction between these terms is generally meaningless. Software Configuration Management can have a slightly different meaning depending on context, but that isn't important in the context of this talk.
 
 ----
 
 > Insert let there be light slide and/or 2001 black monolith slide.
 
 Like most ideas, there are a lot of pre-cursors that had some elements of version control, but it's widely agreed that SCCS is the first true version control system. The systems that existed before SCCS were mostly about deltas. And while deltas are extremely valuable, but they do not make a version control system.
+
+Unfortunately, my research failed me when trying to find any detailed information about pre-cursors to SCCS. I know that systems like IBM's CLEAR (Controlled Library Environment and Resources) and DEC's CMS existed, but I wasn't able to find out much beyond that.
+
+There is a little bit of information about CLEAR from a software engineering technique's conference sponsored by the NATO Science Committee in 1969. CLEAR was a larger system that "tried to assist with the administration and accomplishment of the program development cycle." (http://homepages.cs.ncl.ac.uk/brian.randell/NATO/nato1969.PDF pg. 40) One part of that system used deltas to help with versioning releases, but I was not able to find any other information.
