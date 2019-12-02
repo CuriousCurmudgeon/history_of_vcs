@@ -44,7 +44,27 @@ So you would take your punch card deck to the computer operator and they would a
 
 Now, chances are good that your program didn't work correctly the first time. It almost never does and you have to remember that these programmers had no real time feedback. There was no test suite running constantly. No debugger. No IDE. Nothing. So, now we can finally get to the real problem. How did a programmer manage changes to their punch card deck?
 
-> TODO: Insert content about punch card organization here.
+> TODO: Insert picture of punch card deck with diagonal line across top.
+
+First, your helpful keypunch operator would often draw a diagonal line like this across the top of your cards. Now, if you dropped your deck, you could put it back in order by recreating the line. Not the most reassuring of systems, but it was a nice start for a new deck.
+
+There was also a machine to quickly create a copy of your deck, a punched card duplicator.
+
+But what would happen when you start making edits to your deck. The keypunch operator shouldn't have to type up a new copy of your deck every time you make a change. As a programmer, you should be able to type up a new card as needed to insert into your deck. However, your line won't be very useful in that case. It will quickly become a jagged mess.
+
+> TODO: Insert picture of punch card with sequence numbers.
+
+Does anybody know how many columns there are on a standard punch card? 80. If you look closely at this card, you will see the columns labeled at the bottom all the way to 80. However, it was common practice for compilers to only look at the first 72 columns on the card. So, that gives us 8 unused columns and those columns are the key to ordering the deck. You can make an 8 bit sequence number to order the cards with.
+
+> TODO: Insert picture of punched card sorter.
+
+That kinds of just shifts the problem around though. What if we have our sorted deck and we want to insert a new card in the middle of our program. For example, we want to insert a new card 32 and shift the rest of the deck back. How do we easily renumber our cards? Easy, you write a program for it. So you feed your deck into the machine, assume it's correctly ordered. The machine ignores the existing sequence numbers and copies your deck with new sequence numbers.
+
+There are still a lot of limitations here. Getting new sequence numbers is automated, but if you put a card in the wrong spot in the deck you won't have any record of that. You'll have to compile and, if it compiles successfully, execute your program to recognize your mistake.
+
+There's also no trail of any changes. Collaborating with another programmer on a problem is very difficult. You would have to very, very carefully negotiate who is working on what.
+
+But, as far as I can tell, this as far as the punch card world got. Punch cards weren't long for this world though. We were about to enter the world of multi-user operating systems and teletypes. Pretty soon punch cards would begin to fade out and source code would live on the computer itself. Which meant it was time to start looking into software to manage it.
 
 ----
 
