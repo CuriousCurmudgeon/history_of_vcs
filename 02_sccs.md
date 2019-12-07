@@ -34,7 +34,7 @@ They felt that the concept of version control was too out there to win people ov
 
 The downside of SNOBOL 4 and SPITBOL is size and speed, but that wasn't an issue during the six month trial run.
 
-In the fall of 1973 there were several more projects interested in using SCCS and the decision was made to write a new version. The interested projects were on multiple OS's, but the existing version of SCCS only supported OS/360 still. Instead of writing different versions for each OS (which was standard operating procedure then), the decided to write just one version that would run on a PDP 11/45 under UNIX.
+The protoype was very successful and several large appliations were using it internally. In the fall of 1973 there were several more projects interested in using SCCS and the decision was made to write a new version. The interested projects were on multiple OS's, but the existing version of SCCS only supported OS/360 still. Instead of writing different versions for each OS (which was standard operating procedure then), the decided to write just one version that would run on a PDP 11/45 under UNIX.
 
 > TODO: Insert picture of PDP 11/45.
 
@@ -42,10 +42,37 @@ Source code would be stored on the PDP 11 and sent to the appropriate machine fo
 
 ----
 
-So, that's all well and good, but how did SCCS work?
+So, that's all well and good, but how did SCCS work? First, at a high level, it's important to remember that SCCS worked on individual files. This will probably feel a bit alien to just about everybody in this room. Who here has used a version control system that is focused on individual files? This means your commits are limited to one file at a time. Does anybody here still use a VCS like this, such as RCS?
+
+Let's walk through an example of common SCCS usage. I'm going to use the POSIX syntax here. And no, you can't follow along on Mac OS. It's part of the POSIX standard, but Apple has made the extremely reasonable choice to not ship with SCCS support.
+
+> $ sccs create demo.txt  
+> $ sccs get demo.txt (gets a readonly version)  
+> $ sccs edit demo.txt  
+> $ sccs delta demo.txt  
+
+> TODO: Example of making a release
+
+I don't want to dive too deep into implementation details with every system that I discuss today, but I do think it's important to talk a bit about how SCCS worked to set a baseline for comparison. Plus it's a great excuse to dive into old papers.
 
 > TODO: Add information about SCCS structure.
 
 ----
 
 > TODO: Add information about SCCS end of life. When was the last version? When was it last used? Other interesting tidbits.
+
+As the first "real" version control system, SCCS was obviously extremely influential, but it also had a surprisingly long life-span. The project started in 1972, but didn't have it's first public release until version 4 on February 18, 1977. It even ended up becoming part of the Single UNIX Specification. It's still part of the POSIX standard, which really makes me wonder what other sort of random, irrelevant by-today's-standards utilities are part of POSIX.
+
+> TODO: Include screenshot of SCCS in POSIX Shell and Utilities documentation. https://pubs.opengroup.org/onlinepubs/9699919799/utilities/sccs.html
+
+The file format is actually still (or was?) used by more modern version control systems like BitKeeper and TeamWare.
+
+You can still find a modern fork of SCCS that was open sourced by Sun as part of OpenSolaris on SourceForge. This site is actually a treasure trove of information. For example, it contains the version 4 release announcement from 1977. It contains important information, such as SCCS files now being stored as ASCII instead of binary. We can also see that it was still being distributed as part of a larger tool suite called Programmer's Workbench (PWB).
+
+> TODO: Look up info on ASCII adoption in the 1970s to see how big of a deal this was.
+
+You can also find a link to the SCCS development mailing list! It had a grand total of... one message in 2019. Asking if Windows 10 support was planned.
+
+> TODO: Insert link to SourceForge. http://sccs.sourceforge.net/
+
+GNU also provides CSSC, which is their version of SCCS. The source code of course lives in a git repository. It was converted from CVS to git in 2010. There is actually one dev (James Youngman) actively making contributions to it this past year.  The intent of the project is to help convert old SCCS repos over to a more modern option.
