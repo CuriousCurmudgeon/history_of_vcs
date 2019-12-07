@@ -44,14 +44,40 @@ Source code would be stored on the PDP 11 and sent to the appropriate machine fo
 
 So, that's all well and good, but how did SCCS work? First, at a high level, it's important to remember that SCCS worked on individual files. This will probably feel a bit alien to just about everybody in this room. Who here has used a version control system that is focused on individual files? This means your commits are limited to one file at a time. Does anybody here still use a VCS like this, such as RCS?
 
-Let's walk through an example of common SCCS usage. I'm going to use the POSIX syntax here. And no, you can't follow along on Mac OS. It's part of the POSIX standard, but Apple has made the extremely reasonable choice to not ship with SCCS support.
+Let's walk through an example of common SCCS usage. I'm going to use the POSIX syntax here. And no, you almost certainly can't follow along on your machine. It's part of the POSIX standard, but vendors have made the extremely reasonable choice to not ship with SCCS support.
 
-> $ sccs create demo.txt  
+(https://docs.oracle.com/cd/E19504-01/802-5880/6i9k05dhp/index.html)
+> $ sccs create demo.txt
+
+First, you must create the file through SCCS. We'll get into the structure of an SCCS file in a minute. For now, just note that this is different from _touch_. You can't just open up demo.txt and start editing it.
+
 > $ sccs get demo.txt (gets a readonly version)  
-> $ sccs edit demo.txt  
-> $ sccs delta demo.txt  
+> $ sccs get -r1.1 demo.txt
 
-> TODO: Example of making a release
+If you want to see a readonly version of demo.txt, you can get one like this. You can also check out a specific version of demo.txt by using the -r flag. We'll discuss versioning soon.
+
+> $ sccs edit demo.txt  
+> $ sccs get -c demo.txt (equivalent to the above)  
+
+The _edit_ command lets you check out a version for editing. Only one user can check out a file for editing at a time.
+
+> $ sccs delta demo.txt
+
+The _delta_ command checks in your changes to demo.txt. You will be prompted to add a commit message. Even in Rochkind's original 1975 paper he notes that
+
+> the quality of the reason (like the quality of the change itself) depends on the conscientousness of the programmer. Reasons like "Trouble Report 5576: change SUM header" are what one likes to see. Sometimes, unforunately, one sees instead things like "Another bug" or "Tried again."
+
+So, let's say that you've made some commits to demo.txt and you want to make a release. You would do
+
+> $ sccs edit -r 2 demo.txt (There is also a command to add a release for all files in the SCCS directory.)
+
+I mentioned that mangaging the versioning of releases was a very big problem that SCCS hoped to tackle. It did this through the concept of releases and levels. Each commit would increment the level of a release. For example, when we created demo.txt, it was implicitly Release 1, Level 1, or 1.1. Committing a delta would increment the level to 2, so we're not at 1.2. The release number would only increment if you explicitly started a new release with `edit -r`.
+
+You had a lot of power over managing those releases. For example, if you needed to make a fix to release 1, but release 2 is the most recent, you could explicitly checkout the latest level from release 1 and make a change. That change would not apply to release 2. You would have to make the change in release 2 by yourself if necessary.
+
+You also had a lot of power to search and display history, but I'm not going to dive into that here.
+
+----
 
 I don't want to dive too deep into implementation details with every system that I discuss today, but I do think it's important to talk a bit about how SCCS worked to set a baseline for comparison. Plus it's a great excuse to dive into old papers.
 
