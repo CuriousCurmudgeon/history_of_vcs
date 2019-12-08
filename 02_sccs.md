@@ -10,7 +10,7 @@ There is a little bit of information about CLEAR from a software engineering tec
 
 Like many projects of the 1970s, SCCS was started at Bell Labs.
 
-In 1972, Marc Rochkind was struggling to deal with change management. In his 1975 paper _The Source Code Control System_, he describes four problems he was trying to solve.
+The year is 1972 and Marc Rochkind is struggling to deal with change management. In his 1975 paper _The Source Code Control System_, he describes four problems he was trying to solve.
 
 > 1. The amount of space to store the source code (whether on disk, tape, or cards) may by several times that needed for any particular version.
 > 2. Fixes made to one version of a module sometimes fail to get made to other versions.
@@ -25,9 +25,9 @@ The first version was writen in SNOBOL 4 using the SPITBOL compiler for an IBM S
 
 > TODO: Insert picture of IBM System/370.
 
-SNOBOL = StriNg Oriented and symBOlic Language
-SPITBOL = (Speedy Implementation of SNOBOL)
-IBM 370 = https://en.wikipedia.org/wiki/IBM_System/370
+SNOBOL = StriNg Oriented and symBOlic Language  
+SPITBOL = (Speedy Implementation of SNOBOL)  
+IBM 370 = https://en.wikipedia.org/wiki/IBM_System/370  
 OS/MVT = Multiple Programming with a Variable Number of Tasks (A version of OS/360)
 
 They felt that the concept of version control was too out there to win people over with a specification, so they prioritized ease of development. SNOBOL 4 was chosen because of it's expressive power and ease of use. For it's day it was an incredibly powerful language. One person was able to write the initial prototype in three months. Depending on the domain you work in, that might seem ridiculous by modern standards, but you have to remember that this is 1972. We stand on the shoulders of giants. This is quite a few shoulders below us.
@@ -82,6 +82,24 @@ You also had a lot of power to search and display history, but I'm not going to 
 I don't want to dive too deep into implementation details with every system that I discuss today, but I do think it's important to talk a bit about how SCCS worked to set a baseline for comparison. Plus it's a great excuse to dive into old papers.
 
 > TODO: Add information about SCCS structure.
+
+The core of SCCS is something called _interleaved deltas_.
+
+> The attempt by SCCS to record every version of every module that ever existed is rather ambitious. The system would be impractical unless it used a storage technique and accessing algorithm that allowed many deltas to be kept at a reasonable cost in terms of disk space and processing time. (1975 paper)
+
+Interleaved deltas satisfied both requirements. The space required to store the delta is only slightly greater then the amount of text inserted by the delta. Access speed was mostly flat. Any level could be reached in equal time.
+
+> TODO: Insert picture of interleaved delta.
+
+All changes are stored with just two primitives. Lines are either being inserted or deleted. This should still be familiar today, because that is how diff works. Each _module_ is a separate sequential file. The deltas are stored in the _body_. The _body_ consists of _text records_ and _control records_. _Text records_ contain the source code. _Control records_ specify the effects of each delta.
+
+> TODO: Create additional animations on the slide showing how information is added to the interleaved delta. See 1975 paper for guidance.
+
+In 2015, Marc Rochkind sent an email to a mailing list outlining how he came up with the algorithm for interleaved deltas. I love this story because it shows that even in 1972 computer programmers were solving thorny problems by getting away from their work. (http://sccs.sourceforge.net/sccs_invention.html)
+
+Marc was walking his girlfriend's dog. Marc didn't like the dog, so he would let his mind wander when walking it. He had been struggling with the problem of how to store both the source code and the deltas all in the same file. He came up with the idea of surrouding the pieces of text with markers. When he got back to his apartment he started sketching out details of how it might work.
+
+When he thought he had a workable solution, he enumerated what he thought were all the possible cases of insertions mixed with deletions and worked through each example. From there it was pretty simple to code and he had it running in SNOBOL4 in a day or two.
 
 ----
 
