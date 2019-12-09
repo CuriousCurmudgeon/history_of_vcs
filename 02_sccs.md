@@ -79,6 +79,8 @@ You had a lot of power over managing those releases. For example, if you needed 
 
 You also had a lot of power to search and display history, but I'm not going to dive into that here.
 
+> TODO: Insert info about _sccsid_. This feels like a historical oddity that is worth pointing out.
+
 ----
 
 I don't want to dive too deep into implementation details with every system that I discuss today, but I do think it's important to talk a bit about how SCCS worked to set a baseline for comparison. Plus it's a great excuse to dive into old papers.
