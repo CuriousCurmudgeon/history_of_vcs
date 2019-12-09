@@ -12,6 +12,8 @@ Like many projects of the 1970s, SCCS was started at Bell Labs.
 
 The year is 1972 and Marc Rochkind is struggling to deal with change management. In his 1975 paper _The Source Code Control System_, he describes four problems he was trying to solve.
 
+> TODO: Insert slide with picture of Marc Rochkind.
+
 > 1. The amount of space to store the source code (whether on disk, tape, or cards) may by several times that needed for any particular version.
 > 2. Fixes made to one version of a module sometimes fail to get made to other versions.
 > 3. When changes occur it is difficult to tell exactly what changed and when.
@@ -120,3 +122,6 @@ You can also find a link to the SCCS development mailing list! It had a grand to
 > TODO: Insert link to SourceForge. http://sccs.sourceforge.net/
 
 GNU also provides CSSC, which is their version of SCCS. The source code of course lives in a git repository. It was converted from CVS to git in 2010. There is actually one dev (James Youngman) actively making contributions to it this past year.  The intent of the project is to help convert old SCCS repos over to a more modern option.
+
+----
+> TODO: Information about Marc Rochkind today.
