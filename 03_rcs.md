@@ -56,7 +56,7 @@ Software developers. Providing poor commit messages since the dawn of version co
 
 There were also some auxilary commands. The most interesting of them is _rcs_, which lets you break locks. Even using RCS on a very small project in college, people forgot to release locks on a regular basis. Interestingly, breaking the lock also sends an email to the person who held the lock.
 
-RCS also copied the _sccsid_ concept from SCCS. As far as I can tell, this is the last major version control system to use this concept.
+RCS also copied the _sccsid_ concept from SCCS. As far as I can tell, this is the last major version control system to use this concept. (TODO: Actually, this is wrong. CVS includes it as well, which means SVN does too. Git doesn't directly support it, but does let you do something similar with attributes. https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes)
 
 RCS departs from SCCS in the way it stores deltas. SCCS stored all the deltas interleaved with each other. Interleaved deltas have a couple of performance characteristics.
 
