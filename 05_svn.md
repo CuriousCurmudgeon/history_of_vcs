@@ -23,9 +23,27 @@ One major factor in Subversion becoming an Apache project was Brian Behlendorf. 
 
 # Advantages over CVS
 > TODO: See https://en.wikipedia.org/wiki/Apache_Subversion#Features
+> http://svnbook.red-bean.com/en/1.1/apa.html
+> https://mauriziostorani.wordpress.com/2008/12/10/revision-control-concepts-revision-control-system-rcs-concurrent-versions-system-cvs-and-subversion/
+
+* The entire repo is revisioned, not individual files. Getting the repository status at a single point in time is just one version number. This also gives you atomic commits.
+* Directories are versioned as well. You can run svn commands on them.
+* Support for renames and moves.
+* Limited support for local operations, such as the status of changes you have made, a diff of your changes, and reverting your changes.
+* Branches and tags are just ordinary directories within the filesystem.
+* Support for arbitrary metadata on files and directories with _propget_ and _propset_
+* Better support for binary files. It stores a binary diff instead of full copies like CVS does.
 
 # SVN Adoption
+> TODO: Insert Google Trends graph https://trends.google.com/trends/explore?date=all&q=Apache%20Subversion,CVS%20version%20control
+> Or maybe this one: https://trends.google.com/trends/explore?date=2004-01-01%202012-01-01&q=Apache%20Subversion,CVS%20version%20control
+> Or just Subversion vs CVS
 
+Subversion 1.0 was released on February 23, 2004. I was not able to find any hard adoption numbers for Subversion, but Google Trends shows Subversion coming out ahead relatively quickly after the 1.0 release. I'll note that comparing Google Trends with the search term _CVS_ is not as straightforward as one would wish because
+
+> TODO: Insert CVS Pharmacy logo.
+
+I do feel comfortable stating that Subversion quickly replaced CVS though. 
 
 # SVN Today
 
