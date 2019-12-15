@@ -37,6 +37,8 @@ Unfortunately I was not able to find any hard data on CVS adoption, but I've fou
 
 A 2007 survey by git of it's users found that CVS and SVN were by far the most common version control systems that git users also had experience with. This is not the most representative sample though. An early adopter of git is probably not representative of the average developer.
 
+CVS became the de facto standard for open source development. There were competing paid products, such as Perforce, ClearCase, and Visual SourceSafe, but they never became as ubiquitious as CVS. Although, I think that Perforce did offer free licences to open source projects.
+
 # CVS Today
 Today, I would consider CVS to be a dead project. The last release was 1.11.23 on May 8, 2008. There have been some maintenance bug fixes since then, but no releases. The last checkin was on March 30, 2011.
 
