@@ -36,3 +36,11 @@ SCM = Source Control Management (or Software Configuration Management. I'm using
 Revision Control
 
 Any distinction between these terms is generally meaningless. Software Configuration Management can have a slightly different meaning depending on context, but that isn't important in the context of this talk.
+
+# Topics we won't cover
+
+* Repository hosting services like Sourceforge, GitHub, and BitBucket.
+* Integrated version control, like you see in modern word processors, spreadsheets, or content management systems.
+* Wikis
+
+These things are all important in the history of version control, but they are out of scope for this talk. We're going to focus on the tools that have been primarily used by development teams.
