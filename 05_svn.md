@@ -38,6 +38,7 @@ One major factor in Subversion becoming an Apache project was Brian Behlendorf. 
 > TODO: Insert Google Trends graph https://trends.google.com/trends/explore?date=all&q=Apache%20Subversion,CVS%20version%20control
 > Or maybe this one: https://trends.google.com/trends/explore?date=2004-01-01%202012-01-01&q=Apache%20Subversion,CVS%20version%20control
 > Or just Subversion vs CVS
+> This one seems to be the best https://trends.google.com/trends/explore?date=all&q=%2Fm%2F05vqwg,%2Fm%2F012ct9,%2Fm%2F08441_,%2Fm%2F08w6d6,%2Fm%2F09d6g&hl=en-US&tz=&tz= It came from https://rhodecode.com/insights/version-control-systems-2016
 
 Subversion 1.0 was released on February 23, 2004. I was not able to find any hard adoption numbers for Subversion, but Google Trends shows Subversion coming out ahead relatively quickly after the 1.0 release. I'll note that comparing Google Trends with the search term _CVS_ is not as straightforward as one would wish because
 
