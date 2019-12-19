@@ -1,3 +1,5 @@
+We're going to go rapid fire through a few early open source distributed version control systems before getting to git.
+
 # Who has used Darcs
 Has anyone here used Darcs? How many here even know what Darcs is? How were you using it? Professionally? Hobby? Just testing it out?
 
@@ -15,7 +17,7 @@ The first public release of darcs was v0.9.3 on April 3, 2003. Windows support w
 
 In April 2008, Darcs 2.0 was released. It "introduced a more robust repository format, as well as a new patch semantics called "darcs-2", aimed at minimizing exponential merge issues." (https://en.wikipedia.org/wiki/Darcs)
 
-# Advantages
+# Strengths
 ## Early DVCS
 Git is one of the first distributed version control systems. It's not THE first, but it is an early part of the 3rd generation. If you wanted a DVCS in 2003, then darcs was one of the few options to choose from.
 
