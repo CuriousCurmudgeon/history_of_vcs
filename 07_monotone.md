@@ -8,11 +8,6 @@ It's hard to find much information about the early development of monotone. The 
 
 The name comes from Graydon's desire to pursue the concept of "monotonically increasing test coverage." The basic idea was to automatically maintain a repository of code that always passes all the tests. Monotone was eclipsed by git though and never got there.
 
-> TODO: Read https://graydon.livejournal.com/186550.html
-> TOOD: References to monotone in Graydon's livejournal: https://www.livejournal.com/rsearch?page=3&q=monotone&journal=graydon&journalId=218026&searchArea=post
-> TODO: I need to move the section on BitKeeper first in the last of DVCS's.
-> TODO: https://lwn.net/Articles/132000/
-
 # Strengths
 Monotone uses SHA-1 files to identity revisions, much like git.
 
