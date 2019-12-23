@@ -43,3 +43,4 @@ The current stable release is 7.3.3 on Dec. 29 2018. The public repository on bk
 * https://www.bitkeeper.org/
 * https://www.infoworld.com/article/2670360/linus-torvalds--bitkeeper-blunder.html
 * http://static.lwn.net/1999/features/BitKeeper.php3
+* Tridgell explains how he "reverse engineered" BitKeeper. http://www.groklaw.net/articlebasic.php?story=20050421023821174
