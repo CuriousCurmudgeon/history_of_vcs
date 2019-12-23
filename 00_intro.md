@@ -1,6 +1,6 @@
 This is the actual script for my talk. It's going to be in a lot of flux as I attempt to write this.
 
-----
+# Introduction
 
 Good morning/afternoon. How is everybody doing? Awake? Exhausted?
 
@@ -15,7 +15,7 @@ I also want to thank Jenny Manning for doing her talk at last year's CodeMash - 
 > So, "Daddy, where do version control systems come from?"
 TODO: Insert slide of Emily and/or Olivia asking me a question here.
 
-----
+# What is version control?
 
 So, what is version control?
 
@@ -44,3 +44,6 @@ Any distinction between these terms is generally meaningless. Software Configura
 * Wikis
 
 These things are all important in the history of version control, but they are out of scope for this talk. We're going to focus on the tools that have been primarily used by development teams.
+
+# Let's get started
+We have approximately fifty years of history to cover in fifty minutes, so let's dive in.

@@ -18,6 +18,8 @@ In 2002, BitKeeper was adopted by the Linux kernel. This decision was highly con
 
 BitKeeper's free software license prevented any attempts at reverse engineering. In April 2005, BitMover announced that it would be revoking this license because Andrew Tridgell (pronunciation?) had started reverse engineering the wire protocol to develop a third-party BitKeeper client. Larry McVoy said this violated the license and a lot of heated arguments ensued, with Torvalds in the middle. Tridgell had also been instrumental in reverse engineering SMB to create Samba, so this was very on brand for him. (He had also co-developed rsync for his PhD dissertation.)
 
+In another interesting note, Tridgell and Torvalds were both fellows for the Open Source Development Labs (OSDL) at the time. This later merged with the Free Standards Group in January 2007 to become the Linux Foundation.
+
 Tridgell argued that he had never bought or owned a BitKeeper. Thus, he had never agreed to its license and was not bound by it's restrictions around reverse engineering. It was ethical reverse engineering, just like Samba. Tridgell claimed that all he had done was telneted into a BitKeeper server and typed _help_. His goal was to provide features around metadata and comparing past revisions, features that were only available in the commercial version of BitKeeper.
 
 In the end a very angry Torvalds was left to find a replacement for BitKeeper. We'll come back to that. (Foreshadowing!)
