@@ -12,8 +12,8 @@ So, you're here for a history talk. What makes me qualified to give a history ta
 
 I also want to thank Jenny Manning for doing her talk at last year's CodeMash - _Mommy, where do new programming languages come from?_ last year. Her talk was the inspiration for me submitting this talk and speaking here this year.
 
-> So, "Daddy, where do version control systems come from?"
-TODO: Insert slide of Emily and/or Olivia asking me a question here.
+> So, "Daddy, where do version control systems come from?"  
+> TODO: Insert slide of Emily and/or Olivia asking me a question here.
 
 # What is version control?
 
