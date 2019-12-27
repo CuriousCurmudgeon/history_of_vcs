@@ -18,7 +18,7 @@ Does anybody know what this is? This is a keypunch machine. After writing your p
 
 > TODO: Insert picture of punch card deck.
 
-But, could a computer directly run these punch cards? Look closely at the top of the card here. What do you see? Source code. The punch cards from the keypunch machine are just your source code in a format that can be fed into the computer. And what do we do with source code before the machine actually runs it? We compile. Some languages today still make this an explicit step. Some do it implicitly, but the code is always compiled before the machine can run it.
+So, now you have punch cards for your program, but could a computer directly run these punch cards? Look closely at the top of the card here. What do you see? Source code. The punch cards from the keypunch machine are just your source code in a format that can be fed into the computer. And what do we do with source code before the machine actually runs it? We compile. Some languages today still make this an explicit step. Some do it implicitly, but the code is always compiled before the machine can run it.
 
 > TODO: Insert picture of compiled punch card
 
