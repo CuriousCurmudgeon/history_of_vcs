@@ -44,7 +44,7 @@ RCS does support branches, but I don't have any information on how often they we
 
 > TODO: Insert picture from paper of branch tree.
 
-This is an example of branching. We can see that each fork appends a another number to the version. You can also give a friendlier label to the branches as an alias. One possible usage for this is to manage releases. If you create a labeled branch for every file, then you can retrieve every file for a release with
+This is an example of branching. We can see that each fork appends another number to the version. You can also give a friendlier label to the branches as an alias. One possible usage for this is to manage releases. If you create a labeled branch for every file, then you can retrieve every file for a release with
 
 > $ co -rconfig1 *.v
 
