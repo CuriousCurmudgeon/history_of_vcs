@@ -73,7 +73,7 @@ So, let's say that you've made some commits to demo.txt and you want to make a r
 
 > $ sccs edit -r 2 demo.txt (There is also a command to add a release for all files in the SCCS directory.)
 
-I mentioned that mangaging the versioning of releases was a very big problem that SCCS hoped to tackle. It did this through the concept of releases and levels. Each commit would increment the level of a release. For example, when we created demo.txt, it was implicitly Release 1, Level 1, or 1.1. Committing a delta would increment the level to 2, so we're not at 1.2. The release number would only increment if you explicitly started a new release with `edit -r`.
+I mentioned that managing the versioning of releases was a very big problem that SCCS hoped to tackle. It did this through the concept of releases and levels. Each commit would increment the level of a release. For example, when we created demo.txt, it was implicitly Release 1, Level 1, or 1.1. Committing a delta would increment the level to 2, so now we're at 1.2. The release number would only increment if you explicitly started a new release with `edit -r`.
 
 You had a lot of power over managing those releases. For example, if you needed to make a fix to release 1, but release 2 is the most recent, you could explicitly checkout the latest level from release 1 and make a change. That change would not apply to release 2. You would have to make the change in release 2 by yourself if necessary.
 
