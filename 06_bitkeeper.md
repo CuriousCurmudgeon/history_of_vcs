@@ -20,7 +20,7 @@ BitKeeper's free software license prevented any attempts at reverse engineering.
 
 In another interesting note, Tridgell and Torvalds were both fellows for the Open Source Development Labs (OSDL) at the time. This later merged with the Free Standards Group in January 2007 to become the Linux Foundation.
 
-Tridgell argued that he had never bought or owned a BitKeeper. Thus, he had never agreed to its license and was not bound by it's restrictions around reverse engineering. It was ethical reverse engineering, just like Samba. Tridgell claimed that all he had done was telneted into a BitKeeper server and typed _help_. His goal was to provide features around metadata and comparing past revisions, features that were only available in the commercial version of BitKeeper.
+Tridgell argued that he had never bought or owned a BitKeeper license. Thus, he had never agreed to its license and was not bound by it's restrictions around reverse engineering. It was ethical reverse engineering, just like Samba. Tridgell claimed that all he had done was telneted into a BitKeeper server and typed _help_. His goal was to provide features around metadata and comparing past revisions, features that were only available in the commercial version of BitKeeper.
 
 In the end a very angry Torvalds was left to find a replacement for BitKeeper. We'll come back to that. (Foreshadowing!)
 
@@ -29,12 +29,12 @@ In the end a very angry Torvalds was left to find a replacement for BitKeeper. W
 BitKeeper became the first widely used distributed version control system (DVCS). If you're going to pick a VCS to start the 3rd generation of version control. BitKeeper is probably your best bet. This means that BitKeeper had all the strengths of a DVCS compared to it's centralized competitors.
 
 # Weaknesses
-BitKeeper's licensing was... problematic. It tried to straddle the line between the free and commercial worlds. This kind of setup is fairly common today. BitKeeper compounded that though by adding a clause preventing users of the free version from participating in the development of a competing tool. You couldn't contribute to any other VCS if you used BitKeeper without violating the license.
+BitKeeper's licensing was... problematic. It tried to straddle the line between the free and commercial worlds. This kind of setup is fairly common today. BitKeeper compounded that though by adding a clause preventing users of the free version from participating in the development of a competing tool. You couldn't contribute to any other VCS if you used BitKeeper without violating the license. You had to wait another year after your use of BitKeeper ended to start contributing to anything.
 
 # BitKeeper today
-BitKeeper was open sourced under Apache 2.0 on May 9 2016 with version 7.2ce (CE = community edition), in what many interpreted as a belated attempt for relevance. Like just about every version control system in the wake of git, by 2016 BitKeeper was mostly a forgotten relic. It was mostly remembered for it's role in the creation of git.
+BitKeeper was open sourced under Apache 2.0 on May 9, 2016 with version 7.2ce (CE = community edition), in what many interpreted as a belated attempt for relevance. Like just about every version control system in the wake of git, by 2016 BitKeeper was mostly a forgotten relic. It was mostly remembered for its role in the creation of git.
 
-The current stable release is 7.3.3 on Dec. 29 2018. The public repository on bkbits.net has no commits since. It's not clear what the development status of the product is.
+The current stable release is 7.3.3 on Dec. 29, 2018. The public repository on bkbits.net has no commits since. It's not clear what the development status of the product is.
 
 # Resources
 * https://www.theregister.co.uk/2005/04/15/perens_on_torvalds/
