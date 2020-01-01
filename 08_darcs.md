@@ -4,10 +4,12 @@ We're going to go rapid fire through a few early open source distributed version
 Has anyone here used Darcs? How many here even know what Darcs is? How were you using it? Professionally? Hobby? Just testing it out?
 
 # DVCS (3rd Generation)
-Darcs is the first version control system we're going to talk about from the 3rd generation. The defining trait of this generation is distributed. We mostly think of git when we talk about distributed version control systems, but several others existed first. Linus Torvalds was certainly aware of existing distributed options, but, as we'll see when we get to git, none of them met all of his criteria.
+Darcs is the third version control system we're going to talk about from the 3rd generation. The defining trait of this generation is distributed. We mostly think of git when we talk about distributed version control systems, but several others existed first. Linus Torvalds was certainly aware of existing distributed options, but, as we'll see when we get to git, none of them met all of his criteria.
 
 # Early Development
-David Roundy is creator of Darcs. His background is a bit different then what you would expect from someone creating a version control system. He received his Ph.D. in physics from U.C. Berkely in 2001. While doing post-doctoral work, he was also working on a cross-platform online bridge game called aBridge. He was using CVS on SourceForge, but wasn't happy with it. Subversion was really new at the time and Roundy was interested in the idea of a distributed system, so he started looking into Arch.
+David Roundy is creator of Darcs. David’s background is a bit different then what you would expect from someone creating a version control system. He received his Ph.D. in physics from U.C. Berkeley in 2001. While doing post-doctoral work, he was also working on a cross-platform online bridge game called aBridge. He was using CVS on SourceForge, but wasn't happy with it. Subversion was really new at the time, but Roundy was interested in the idea of a distributed system, so he started looking into Arch.
+
+Arch was GNU's distributed version control system that we won't go into here. The bare minimum is that it was started in 2001 and had petered out by 2008.
 
 Arch didn't really satisfy him either though. In June 2002 he got involved in discussions about creating a new patch format for arch, but it became clear that his proposal would never be incorporated. He found the ideas interesting though, started playing around with them, and, behold, darcs was born. (And since a developer can really only dedicate sufficent time to one side project, aBridge essentially died to give us darcs.)
 
@@ -38,6 +40,7 @@ The biggest weakness of darcs is speed and memory usage. This was far more prono
 And depending on your preferences, the very interactive CLI could be seen as a con. It's been a long time since I used darcs on a regular basis (early 2012), but I don't remember having any issue with it.
 
 # Darcs Today
-Today, darcs is a very niche version control system. It's still actively developed, but at a pretty slow pace. 2.14.2 came out in January 2019 and when I checked on December 17, 2019, there hadn't been a single commit since October 2, 2019.
+Today, Darcs is a very niche version control system. It's still actively developed, but at a pretty slow pace. 2.14.2 came out in January 2019 and when I checked on December 17, 2019, there hadn't been a single commit since October 2, 2019.
 
-My understandig is that it is more common in the Haskell community, which makes sense since it's written Haskell. But even the darcs die hards have mostly accepted that git has become The One True VCS. Even way back in 2011 there was talk in the community about Haskell projects starting to move away from darcs to git.
+My understanding is that it is more common in the Haskell community, which makes sense since it's written Haskell. But even the Darcs diehards have mostly accepted that git has become The One True VCS. Even way back in 2011 there was talk in the community about Haskell projects starting to move away from Darcs to git.
+
