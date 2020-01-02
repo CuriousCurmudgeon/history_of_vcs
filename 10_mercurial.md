@@ -1,7 +1,7 @@
 Git wasn't the only version control system to emerge from the ashes of the BitKeeper fallout. There was also Mercurial.
 
 # Who has used Mercurial?
-Who here has used git? Now, who is currently using it on a daily basis? Who used to? Anybody who started using it way back in 2005?
+Who here has used Mercurial? Now, who is currently using it on a daily basis? Who used to? Anybody who started using it way back in 2005?
 
 # Early Development
 The early history of Mercurial is tightly linked to BitKeeper and git.
@@ -29,9 +29,13 @@ Similar to git, Mercurial also took design inspiration from monotone in it's use
 > https://web.archive.org/web/20090129015244/http://ldn.linuxfoundation.org/article/dvcs-roundup-one-system-rule-them-all-part-2#hg
 
 # Mercurial Today
+Matt Mackall stepped down as project lead in late 2016. Today he works at Facebook, which uses Mercurial. Mozilla is also a notable user of Mercurial.
+
+Facebook is also working on a Mercurial source control server written in Rust called Mononoke.
+
 Sadly, today Mercurial is fading as we move ever close to a git monoculture. Bitbucket was orignally GitHub, but for Mercurial. Even they have given in though, announcing that Mercurial support will be deprecated in February 2020 and removed on June 1, 2020. Their announcement noted that less than 1% of new repositories were using Mercurial.
 
-The most recent Stack Overflow Developer Survey showed that almost 90% of developers use git, but only 3% use Mercurial.
+The 2018 Stack Overflow Developer Survey showed that almost 90% of developers use git, but only 3% use Mercurial.
 
 It is still under active development though. Version 5.2 was released on Nov. 5, 2019.
 
