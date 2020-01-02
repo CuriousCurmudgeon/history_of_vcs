@@ -20,6 +20,7 @@ Following the release of kernel v2.6.12-rc2, Torvalds was able to start dedicati
 * April 18, 2005: First merge of multiple branches
 * April 29, 2005: Performance goals met. Recorded 6.7 patches per second to the Linux kernel tree
 * June 16, 2005: Git managed the kernel 2.6.12 release.
+https://time.graphics/editor/332350?export=png
 
 # Development Post-Torvalds
 Torvalds turned over maintenance to Junio Hamano on July 26, 2005. Hamano had been a major contributor.
@@ -27,7 +28,7 @@ Torvalds turned over maintenance to Junio Hamano on July 26, 2005. Hamano had be
 1.0 was released on December 21, 2005. Hamano remains the project maintainer to this day.
 
 # Wider Adoption
-Git had a huge advantage compared to any other VCS in history. The highly visible conflict over BitKeeper, on the most highly visible open source project in the world, with the most famous open source developer in the world as a central figure gave it an enormous amount of visibility. Git was then able to capitalize on that visibility by rapdily creating an initial version and using it to manage a release of the Linux kernel.
+Git had a huge advantage compared to any other VCS in history. The highly visible conflict over BitKeeper, on the most highly visible open source project in the world, with the most famous open source developer in the world as a central figure gave it an enormous amount of visibility. Git was then able to capitalize on that visibility by rapidly creating an initial version and using it to manage a release of the Linux kernel.
 
 In the early days, git was notorious for being difficult to use. Linus had developed a system designed specificially for his workflow around merging patches into the Linux kernel. It's taken many years of work to make the project more usable. In a 2007 talk at Google, Torvalds mentioned that he thought that git was mostly usable for other projects at that point.
 
